@@ -1,0 +1,98 @@
+html,body
+{
+    margin:0;
+    padding:0;
+}
+
+
+label{font-weight:600;}
+input, textarea, select
+{
+    border-radius:5px;
+    border:none;
+    padding:3px;
+    padding-left:8px;
+}
+
+.btn-form
+{
+    color:white;
+    background:rgb(62,74,184);
+    padding: 1px 30px;
+    margin-top:7px;
+}
+
+.container
+{
+    width:50%;
+    margin:0 auto;
+    background:white;
+    border-radius:10px;
+    padding:4px;
+    
+    .step
+    {
+        margin:3px 0;
+        padding:7px;
+        border-radius:5px;
+        overflow:hidden;
+        background:rgb(222, 222,222);
+        width:100%;
+
+        h3
+        {
+            background:rgb(255,198,0);
+            color:white;
+            vertical-align:text-bottom;
+            margin:-7px;
+            padding:5px;
+            padding-left:12px;
+            border-radius:5px;
+            font-size:15px;
+        }
+
+        div
+        {
+            overflow:hidden;
+            max-height:100%;
+            transition-duration: 0.4s;
+        
+            .input-group
+            {
+                width:30%;
+                margin: 0 auto;
+                display:inline-block;
+                margin-top:8px;
+                margin-right:4px;
+
+                &:nth-child(even){margin-right:30%;}
+
+                label,input,select
+                {
+                    padding:0;
+                    margin:0;
+                    width:100%;
+                }
+            }
+
+            .input-group-full
+            {
+                @extend .input-group;
+                width:100%;
+                textarea{
+                    width:100%;
+                }
+                input
+                {
+                    @extend .btn-form;
+                    width:auto;
+                    padding:1px 20px;
+                }
+            }
+        }
+    }
+}
+
+
+#step2{height:0;}
+#step3{height:0;}
