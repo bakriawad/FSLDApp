@@ -11754,9 +11754,8 @@ select {
 
 .container .step div {
   overflow: hidden;
-  max-height: 100%;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
 }
 
 .container .step div .input-group,
@@ -11795,6 +11794,10 @@ select {
 .container .step div .input-group-full input {
   width: auto;
   padding: 1px 20px;
+}
+
+#step1 {
+  height: 215px;
 }
 
 #step2 {

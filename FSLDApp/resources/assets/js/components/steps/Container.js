@@ -42,13 +42,13 @@ export default  class App extends Component {
     
     goToStep2(state){
         console.log("switching to step 2");
-        document.getElementById("step2").style.height="auto";
+        document.getElementById("step2").style.height="130px";
         this.setState(state);
     }
     
     goToStep3(state){
         console.log("switching to step 3");
-        document.getElementById("step3").style.height="auto";
+        document.getElementById("step3").style.height="150px";
         this.setState({comments:state.comments});
     }
 
